@@ -64,45 +64,25 @@
 									<h3 class="widget-title">Categories</h3>
 									<div class="widget-custom-menu">
 										<ul>
+										<c:forEach items="${list}" var="c">
 											<li class="has-sub"><a class="collapsed"
 												data-bs-toggle="collapse" href="#has-sub1" role="button"
-												aria-expanded="false" aria-controls="has-sub1">Men</a>
+												aria-expanded="false" aria-controls="has-sub1">${c.cateName}</a>
 												<ul class="collapse" id="has-sub1" style="">
-													<li><a href="shop.html">New in</a></li>
-													<li><a href="shop.html">Clothing</a></li>
-													<li><a href="shop.html">Coats</a></li>
-													<li><a href="shop.html">Jackets</a></li>
-													<li><a href="shop.html">Shirts</a></li>
-													<li><a href="shop.html">T-shirts</a></li>
-													<li><a href="shop.html">Blazers</a></li>
-												</ul></li>
-											<li class="has-sub"><a class="collapsed active"
-												data-bs-toggle="collapse" href="#has-sub2" role="button"
-												aria-expanded="false" aria-controls="has-sub2">Women</a>
-												<ul class="collapse" id="has-sub2">
-													<li><a href="shop.html">New In</a></li>
-													<li><a href="shop.html">Jeans</a></li>
-													<li><a href="shop.html">Jackets</a></li>
-													<li><a href="shop.html">Sweatshirts</a></li>
-													<li><a href="shop.html">Skirts</a></li>
-												</ul></li>
-											<li class="has-sub"><a class="collapsed"
-												data-bs-toggle="collapse" href="#has-sub3" role="button"
-												aria-expanded="false" aria-controls="has-sub3">Kids</a>
-												<ul class="collapse" id="has-sub3">
-													<li><a href="shop.html">Shoes</a></li>
-													<li><a href="shop.html">Clothing</a></li>
-													<li><a href="shop.html">Shirts</a></li>
-													<li><a href="shop.html">Skirts</a></li>
-												</ul></li>
-											<li class="has-sub"><a class="collapsed"
-												data-bs-toggle="collapse" href="#has-sub4" role="button"
-												aria-expanded="false" aria-controls="has-sub4">Accessories</a>
-												<ul class="collapse" id="has-sub4">
-													<li><a href="shop.html">Bags</a></li>
-													<li><a href="shop.html">Shoes</a></li>
-													<li><a href="shop.html">Wallets</a></li>
-												</ul></li>
+													<li><a href="product">New in</a></li>
+													<li><a href="product">Clothing</a></li>
+													<li><a href="product">Coats</a></li>
+													<li><a href="product">Jackets</a></li>
+													<li><a href="product">Shirts</a></li>
+													<li><a href="product">T-shirts</a></li>
+													<li><a href="product">Blazers</a></li>
+												</ul>
+												</li>
+										</c:forEach>
+											
+											
+											
+											
 										</ul>
 									</div>
 								</div>
@@ -121,33 +101,33 @@
 											<span class="current">Show 12 <i
 												class="lastudioicon-down-arrow"></i></span>
 											<ul>
-												<li class="active"><a href="shop.html" class="active">Show
+												<li class="active"><a href="product" class="active">Show
 														12</a></li>
-												<li><a href="shop.html">Show 15</a></li>
-												<li><a href="shop.html">Show 30</a></li>
+												<li><a href="product">Show 15</a></li>
+												<li><a href="product">Show 30</a></li>
 											</ul>
 										</div>
 										<div class="product-sorting-menu product-view-count">
 											<span class="current">Filters <i
 												class="lastudioicon-down-arrow"></i></span>
 											<ul>
-												<li class="active"><a href="shop.html" class="active">Filters</a></li>
-												<li><a href="shop.html">Categories</a></li>
-												<li><a href="shop.html">Tags</a></li>
+												<li class="active"><a href="product" class="active">Filters</a></li>
+												<li><a href="product">Categories</a></li>
+												<li><a href="product">Tags</a></li>
 											</ul>
 										</div>
 										<div class="product-sorting-menu product-sorting">
 											<span class="current">Sort by Default <i
 												class="lastudioicon-down-arrow"></i></span>
 											<ul>
-												<li class="active"><a href="shop.html" class="active">Sort
+												<li class="active"><a href="product" class="active">Sort
 														by Default</a></li>
-												<li><a href="shop.html">Sort by Popularity</a></li>
-												<li><a href="shop.html">Sort by Rated</a></li>
-												<li><a href="shop.html">Sort by Latest</a></li>
-												<li><a href="shop.html">Sort by Price: <i
+												<li><a href="product">Sort by Popularity</a></li>
+												<li><a href="product">Sort by Rated</a></li>
+												<li><a href="product">Sort by Latest</a></li>
+												<li><a href="product">Sort by Price: <i
 														class="lastudioicon-arrow-up"></i></a></li>
-												<li><a href="shop.html">Sort by Price: <i
+												<li><a href="product">Sort by Price: <i
 														class="lastudioicon-arrow-down"></i></a></li>
 											</ul>
 										</div>
@@ -179,7 +159,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/13.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -206,7 +186,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Believer Delicate
+																<a href="product-detail">Believer Delicate
 																	Earrings</a>
 															</h4>
 															<div class="prices">
@@ -221,7 +201,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/19.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -248,7 +228,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Believer Delicate
+																<a href="product-detail">Believer Delicate
 																	Earrings</a>
 															</h4>
 															<div class="prices">
@@ -263,7 +243,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/20.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -290,7 +270,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Black & Gold
+																<a href="product-detail">Black & Gold
 																	Forever Double Choker Necklace</a>
 															</h4>
 															<div class="prices">
@@ -305,7 +285,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/31.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -332,7 +312,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Black check
+																<a href="product-detail">Black check
 																	texture shirt</a>
 															</h4>
 															<div class="prices">
@@ -347,7 +327,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/4.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -374,7 +354,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Black check
+																<a href="product-detail">Black check
 																	texture shirt</a>
 															</h4>
 															<div class="prices">
@@ -389,7 +369,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/33.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -416,7 +396,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Blue wide-leg
+																<a href="product-detail">Blue wide-leg
 																	jeans</a>
 															</h4>
 															<div class="prices">
@@ -431,7 +411,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/6.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -458,7 +438,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Blue wide-leg
+																<a href="product-detail">Blue wide-leg
 																	jeans</a>
 															</h4>
 															<div class="prices">
@@ -473,7 +453,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/26.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -500,7 +480,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">buttoned
+																<a href="product-detail">buttoned
 																	waistcoat</a>
 															</h4>
 															<div class="prices">
@@ -515,7 +495,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/8.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -542,7 +522,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Buttoned
+																<a href="product-detail">Buttoned
 																	Waistcoat</a>
 															</h4>
 															<div class="prices">
@@ -557,7 +537,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/11.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -584,7 +564,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Disappearing Into
+																<a href="product-detail">Disappearing Into
 																	the Sea Necklace</a>
 															</h4>
 															<div class="prices">
@@ -599,7 +579,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/21.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -626,7 +606,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Disappearing Into
+																<a href="product-detail">Disappearing Into
 																	the Sea Necklace</a>
 															</h4>
 															<div class="prices">
@@ -641,7 +621,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/87.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -668,7 +648,7 @@
 													<div class="product-info info-style2">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Double Breasted
+																<a href="product-detail">Double Breasted
 																	Blazer</a>
 															</h4>
 															<div class="prices">
@@ -688,7 +668,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item ">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/list1.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -703,7 +683,7 @@
 													<div class="product-info">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Believer Delicate
+																<a href="product-detail">Believer Delicate
 																	Earrings</a>
 															</h4>
 															<div class="prices">
@@ -730,7 +710,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item ">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/list2.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -745,7 +725,7 @@
 													<div class="product-info">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Believer Delicate
+																<a href="product-detail">Believer Delicate
 																	Earrings</a>
 															</h4>
 															<div class="prices">
@@ -772,7 +752,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item ">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/list3.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -787,7 +767,7 @@
 													<div class="product-info">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Black & Gold
+																<a href="product-detail">Black & Gold
 																	Forever Double Choker Necklace</a>
 															</h4>
 															<div class="prices">
@@ -814,7 +794,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item ">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/list4.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -829,7 +809,7 @@
 													<div class="product-info">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Black check
+																<a href="product-detail">Black check
 																	texture shirt</a>
 															</h4>
 															<div class="prices">
@@ -856,7 +836,7 @@
 												<!-- Start Product Item -->
 												<div class="product-item ">
 													<div class="product-thumb">
-														<a href="shop-single-product.html"> <img
+														<a href="product-detail"> <img
 															src="<c:url value="/resources/assets/img/shop/list5.jpg"/>"
 															alt="Moren-Shop"> <span class="thumb-overlay"></span>
 														</a>
@@ -871,7 +851,7 @@
 													<div class="product-info">
 														<div class="content-inner">
 															<h4 class="title">
-																<a href="shop-single-product.html">Black check
+																<a href="product-detail">Black check
 																	texture shirt</a>
 															</h4>
 															<div class="prices">
@@ -901,16 +881,16 @@
 								<div class="pagination-area">
 									<nav>
 										<ul class="page-numbers">
-											<li><a class="page-number active" href="shop.html">1</a>
+											<li><a class="page-number active" href="product">1</a>
 											</li>
-											<li><a class="page-number" href="shop.html">2</a></li>
-											<li><a class="page-number" href="shop.html">3</a></li>
-											<li><a class="page-number" href="shop.html">4</a></li>
-											<li><a class="page-numbe" href="shop.html">…</a></li>
-											<li><a class="page-number" href="shop.html">6</a></li>
-											<li><a class="page-number" href="shop.html">7</a></li>
-											<li><a class="page-number" href="shop.html">8</a></li>
-											<li><a class="page-number next" href="shop.html"> <i
+											<li><a class="page-number" href="product">2</a></li>
+											<li><a class="page-number" href="product">3</a></li>
+											<li><a class="page-number" href="product">4</a></li>
+											<li><a class="page-numbe" href="product">…</a></li>
+											<li><a class="page-number" href="product">6</a></li>
+											<li><a class="page-number" href="product">7</a></li>
+											<li><a class="page-number" href="product">8</a></li>
+											<li><a class="page-number next" href="product"> <i
 													class="icofont-long-arrow-right"></i>
 											</a></li>
 										</ul>

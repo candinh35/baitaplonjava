@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<script src="assets/js/modernizr.js"></script>
+<script src="<c:url value="/resources/assets/js/modernizr.js"/>"></script>
 <!--=== jQuery Min Js ===-->
 <script
 	src="<c:url value="/resources/assets/js/jquery-main.js"></c:url>"></script>

@@ -9,7 +9,7 @@
 <title>${title}</title>
 
 <!--== Favicon ==-->
-<link rel="shortcut icon" href="assets/img/favicon.ico"
+<link rel="shortcut icon" href="<c:url value="/resources/assets/img/favicon.ico"/>"
 	type="image/x-icon" />
 
 <!--== Google Fonts ==-->

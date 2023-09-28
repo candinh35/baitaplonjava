@@ -166,17 +166,17 @@
 						<div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
 							<div class="category-item hover-effect effect-style1 mb-sm-30">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/17.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 									<div class="effect-content"></div>
 								</div>
 								<div class="content">
 									<div class="inner-content">
 										<h4 class="title">New Arrivals</h4>
 										<p>Stretch your style limits with our latest bags</p>
-										<a class="btn-theme" href="shop.html">Shop Now</a>
+										<a class="btn-theme" href="product">Shop Now</a>
 									</div>
 								</div>
 							</div>
@@ -187,14 +187,14 @@
 									<div class="inner-content">
 										<h4 class="title">Best Seller</h4>
 										<p>Stretch your style limits with our latest bags</p>
-										<a class="btn-theme" href="shop.html">Shop Now</a>
+										<a class="btn-theme" href="product">Shop Now</a>
 									</div>
 								</div>
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/18.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 									<div class="effect-content"></div>
 								</div>
 							</div>
@@ -211,28 +211,28 @@
 						<div class="col-md-6">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/15.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Modern Minimalism</h4>
-									<a class="btn-theme" href="shop.html">View all</a>
+									<a class="btn-theme" href="product">View all</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/16.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Crossbody Bags</h4>
-									<a class="btn-theme" href="shop.html">View all</a>
+									<a class="btn-theme" href="product">View all</a>
 								</div>
 							</div>
 						</div>
@@ -258,10 +258,10 @@
 						<div class="col">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/10.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Bags</h4>
@@ -271,10 +271,10 @@
 						<div class="col">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/11.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Bags</h4>
@@ -284,10 +284,10 @@
 						<div class="col">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/12.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Bags</h4>
@@ -297,10 +297,10 @@
 						<div class="col">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/13.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Bags</h4>
@@ -310,10 +310,10 @@
 						<div class="col">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/14.jpg"/>"
 										alt="Moren-Image"></a> <a class="category-banner-link"
-										href="shop.html"></a>
+										href="product"></a>
 								</div>
 								<div class="content">
 									<h4 class="title">Bags</h4>
@@ -341,7 +341,7 @@
 						<div class="col-sm-6 col-md-4">
 							<div class="category-item">
 								<div class="thumb">
-									<a href="shop.html"> <img
+									<a href="product"> <img
 										src="<c:url value="/resources/assets/img/shop/category/7.jpg"/>"
 										alt="Moren-Image">
 									</a>
@@ -360,7 +360,7 @@
 						<div class="col-sm-6 col-md-4">
 							<div class="category-item mt-xs-50">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/8.jpg"/>"
 										alt="Moren-Shop"></a>
 								</div>
@@ -378,7 +378,7 @@
 						<div class="col-sm-6 col-md-4">
 							<div class="category-item mt-sm-50">
 								<div class="thumb">
-									<a href="shop.html"><img
+									<a href="product"><img
 										src="<c:url value="/resources/assets/img/shop/category/9.jpg"/>"
 										alt="Moren-Shop"></a>
 								</div>
@@ -415,7 +415,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/53.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -440,7 +440,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -454,7 +454,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/54.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -479,7 +479,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -493,7 +493,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/55.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -518,7 +518,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -532,7 +532,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/56.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -557,7 +557,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -571,7 +571,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/57.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -596,7 +596,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -610,7 +610,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/58.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -635,7 +635,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -649,7 +649,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/59.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -674,7 +674,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -688,7 +688,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/60.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -713,7 +713,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -727,7 +727,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/61.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -752,7 +752,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -766,7 +766,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/62.jpg"/> "
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -791,7 +791,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -805,7 +805,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/63.jpg"/> "
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -830,7 +830,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -844,7 +844,7 @@
 							<!-- Start Product Item -->
 							<div class="product-item">
 								<div class="product-thumb">
-									<a href="shop-single-product.html"> <img
+									<a href="product-detail"> <img
 										src="<c:url value="/resources/assets/img/shop/64.jpg"/>"
 										alt="Moren-Shop"> <span class="thumb-overlay"></span>
 									</a>
@@ -869,7 +869,7 @@
 								<div class="product-info">
 									<div class="content-inner">
 										<h4 class="title">
-											<a href="shop-single-product.html">Woven Crossbody Bag</a>
+											<a href="product-detail">Woven Crossbody Bag</a>
 										</h4>
 										<div class="prices">
 											<span class="price">£39.90</span>
@@ -886,7 +886,7 @@
 
 			<!--== Start Newsletter Area ==-->
 			<section class="newsletter-area bg-overlay-black2-6 bg-parallax"
-				data-speed="1.136" data-bg-img="assets/img/photos/bg-d5.jpg">
+				data-speed="1.136" data-bg-img="c:url value="resources/assets/img/photos/bg-d5.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 m-auto">

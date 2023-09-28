@@ -1,19 +1,18 @@
-package baitaplon.DAO.impl;
+package baitaplon.DAO.Impl;
 
 import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import baitaplon.DAO.CategoryDAO;
 import baitaplon.entities.Category;
-
-public class CategoryDAOimpl implements CategoryDAO {
-	@Autowired
-    private SessionFactory sessionFactory;
-
-
+@Repository
+public class CategoryDAOImpl implements CategoryDAO {
+	 @Autowired
+	    private SessionFactory sessionFactory;
 	@Override
 	public List<Category> getCate() {
 		Session session = sessionFactory.openSession();
@@ -29,7 +28,6 @@ public class CategoryDAOimpl implements CategoryDAO {
             session.getTransaction().rollback();
             session.close();
         }
-
 		return null;
 	}
 

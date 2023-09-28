@@ -21,14 +21,14 @@
 		<main class="main-content">
 			<!--== Start Page Title Area ==-->
 			<section class="page-title-area bg-overlay-black2-6 bg-img"
-				data-bg-img="assets/img/photos/bg-page2.jpg">
+				data-bg-img="<c:url value="resources/assets/img/photos/bg-page2.jpg"/>">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="page-title-content">
 								<h2 class="title">My Account</h2>
 								<div class="bread-crumbs">
-									<a href="index.html">Home<span class="breadcrumb-sep">></span></a><span
+									<a href="index">Home<span class="breadcrumb-sep">></span></a><span
 										class="active">My Account</span>
 								</div>
 							</div>
