@@ -26,11 +26,11 @@
 				<div class="header-align">
 					<div class="header-navigation-area">
 						<ul class="main-menu nav justify-content-center position-relative">
-							<li class="has-submenu active"><a href="index">Home</a></li>
-							<li class="has-submenu"><a href="product">Shop</a></li>
-							<li class="has-submenu"><a href="about">About us</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="product">Shop</a></li>
+							<li><a href="about">About us</a></li>
 							<li><a href="collection">Collections</a></li>
-							<li class="has-submenu"><a href="blog">Blog</a></li>
+							<li><a href="blog">Blog</a></li>
 							<li><a href="contact">Contact</a></li>
 						</ul>
 					</div>
@@ -50,7 +50,7 @@
 					</div>
 					<div class="header-action-cart">
 						<button class="btn-cart cart-icon">
-							<span class="cart-count">2</span> <i
+							<span class="cart-count">0</span> <i
 								class="lastudioicon-shopping-cart-2"></i>
 						</button>
 					</div>

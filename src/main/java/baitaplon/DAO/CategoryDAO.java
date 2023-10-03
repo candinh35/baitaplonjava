@@ -4,7 +4,9 @@ import java.util.List;
 
 import baitaplon.entities.Category;
 
+
 public interface CategoryDAO {
-	List<Category> getCate();
+	public List<Category> getCate();
+	
 	
 }

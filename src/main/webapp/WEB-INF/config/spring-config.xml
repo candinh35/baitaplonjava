@@ -11,35 +11,39 @@
 	<context:component-scan base-package="baitaplon" />
 	<context:annotation-config></context:annotation-config>
 
-	
-  <bean
-    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix">
-      <value>/WEB-INF/views/</value>
-    </property>
-    <property name="suffix">
-      <value>.jsp</value>
-    </property>
-  </bean>
-  
-  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-    <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
-    <property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=Baitaplon" />
-    <property name="username" value="sa" />
-    <property name="password" value="1234" />
-</bean>
 
-  
-  <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-  	<property name="dataSource" ref="dataSource"></property>
-  	<property name="packagesToScan" value="baitaplon.entities"></property>
-  	<property name="hibernateProperties">
-  		<props>
-  			<prop key="hibernate.show_sql">true</prop>
-  			<prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>
-  			<prop key="hibernate.current_session_context_class">thread</prop>
-  		</props>
-  	</property>
-  </bean>
-  <mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url"
+			value="jdbc:sqlserver://localhost:1433;databaseName=Baitaplon" />
+		<property name="username" value="sa" />
+		<property name="password" value="1234" />
+	</bean>
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="packagesToScan" value="baitaplon.entities"></property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+			</props>
+		</property>
+	</bean>
+	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 </beans>

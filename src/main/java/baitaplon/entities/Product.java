@@ -22,22 +22,25 @@ public class Product {
 	private String proName;
 	@Column(name="price")
 	private float price;
+	@Column(name="description")
+	private String description;
 	@Column(name="image")
 	private String image;
 	@ManyToOne
 	@JoinColumn(name = "CateId",referencedColumnName = "CateId")
 	private Category cateId ;
-	public Product(int proId, String proName, float price, String image, Category cateId) {
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Product(int proId, String proName, float price, String description, String image, Category cateId) {
 		super();
 		this.proId = proId;
 		this.proName = proName;
 		this.price = price;
+		this.description = description;
 		this.image = image;
 		this.cateId = cateId;
-	}
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	public int getProId() {
 		return proId;
@@ -57,16 +60,22 @@ public class Product {
 	public void setPrice(float price) {
 		this.price = price;
 	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 	public String getImage() {
 		return image;
 	}
 	public void setImage(String image) {
 		this.image = image;
 	}
-	public Category getCategory() {
+	public Category getCateId() {
 		return cateId;
 	}
-	public void setCategoy(Category category) {
+	public void setCateId(Category cateId) {
 		this.cateId = cateId;
 	}
 	

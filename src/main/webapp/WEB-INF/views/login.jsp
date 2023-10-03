@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <jsp:include page="head.jsp" flush="true"></jsp:include>
@@ -65,24 +66,23 @@
 									<div class="tab-pane fade show active" id="nav-home"
 										role="tabpanel" aria-labelledby="nav-home-tab">
 										<div class="login-form">
-											<form class="login-form-wrapper" id="login-form"
-												action="http://whizthemes.com/mail-php/raju/arden/mail.php"
-												method="post">
+											<form:form class="login-form-wrapper" id="login-form"
+												action="login" method="post">
 												<div class="row">
 													<div class="col-lg-12">
 														<div class="row">
 															<div class="col-md-12">
 																<div class="form-group">
-																	<label for="UserName" class="form-label">Username
-																		or email address *</label> <input type="email"
-																		class="form-control" id="UserName">
+																	<label for="UserName" class="form-label">Email address *</label>
+																	<form:input path="userLogin" type="email"
+																		class="form-control" id="UserName" />
 																</div>
 															</div>
 															<div class="col-md-12">
 																<div class="form-group mb-0">
-																	<label for="password" class="form-label mt-15">Password
-																		*</label> <input type="password" class="form-control"
-																		id="password">
+																	<label for="password" class="form-label mt-15">Password*</label>
+																	<form:input path="userPassword" type="password"
+																		class="form-control" id="password" />
 																</div>
 															</div>
 															<div class="col-md-12">
@@ -95,15 +95,14 @@
 															</div>
 															<div class="col-md-12">
 																<div class="form-group mb-0 form-group-info">
-																	<button class="btn btn-theme btn-black" type="submit">Log
-																		in</button>
+																	<button class="btn btn-theme btn-black" type="submit">Login</button>
 																	<a class="btn-forgot" href="#">Lost your password?</a>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</form>
+											</form:form>
 										</div>
 										<!-- Message Notification -->
 										<div class="form-message"></div>
