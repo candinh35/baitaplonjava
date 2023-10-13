@@ -21,7 +21,7 @@ public class ProductDAOImpl implements ProductDAO {
 	public List<Product> getProducts() {
 		Session session = sessionFactory.openSession();
 		try {
-			List list = session.createQuery("from Product").list();
+			List list = session.createQuery("from Product p ORDER BY p.proId DESC").list();
 			return list;
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -74,6 +74,39 @@ public class ProductDAOImpl implements ProductDAO {
 	            session.close();
 	        }
 	        return null;
-	    }    
+	    }
 
+	@Override
+	public boolean insertProduct(Product pro) {
+		Session session = sessionFactory.openSession();
+		try {
+			session.save(pro);
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			session.close();
+		}
+		return false;
+	}
+
+	@Override
+	public Boolean update(Product product) {
+		Session session = sessionFactory.openSession();
+		try {
+			session.beginTransaction();
+			session.update(product);
+			session.getTransaction().commit();
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		} finally {
+			session.close();
+		}
+		return false;
+	}
+
+	
 }

@@ -45,5 +45,13 @@
 			</props>
 		</property>
 	</bean>
-	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+	<mvc:resources location="/resources/"
+		mapping="/resources/**"></mvc:resources>
+
+	<bean id="passwordEncoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+		<constructor-arg name="strength" value="12"></constructor-arg>
+	</bean>
+	 <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
+
 </beans>

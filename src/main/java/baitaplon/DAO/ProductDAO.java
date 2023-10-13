@@ -8,6 +8,6 @@ public interface ProductDAO {
 	public List<Product> getProducts();
 	public List<Product> getProductByCategory(Integer cateId);
 	public Product getProductById (Integer proId);
-	
-
+	public boolean insertProduct(Product pro);
+	public Boolean update(Product product);
 }

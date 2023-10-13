@@ -1,45 +1,33 @@
 package baitaplon.DAO.Impl;
 
-import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import baitaplon.DAO.UserDao;
-import baitaplon.entities.Users;
+import baitaplon.DAO.UserDAO;
+import baitaplon.entities.User;
+
+
 @Repository
-public class UserDAOImpl implements UserDao {
+public class UserDAOImpl implements UserDAO{
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	
+
 	@Override
-	public Users login(String Email, String password) {
-			Session session = sessionFactory.openSession();
-			Transaction transaction = null;
-			try {
-				transaction = session.beginTransaction();
-				Query query = session.createQuery("From Users where userLogin =: email and userPassword=: password");
-				query.setString("email", Email);
-				query.setString("password", password);
-				Users user = (Users) query.uniqueResult();
-				transaction.commit();
-				return user;
-			} catch (Exception e) {
-				if (transaction != null ) {
-					transaction.rollback();
-				}
-				// TODO: handle exception
-			}
-			finally {
-				session.close();
-			}
+	public User findByUserName(String username) {
+		Session session = sessionFactory.openSession();
+		try {
+			User user = (User) session.createQuery("from User where userName = :userName")
+			.setParameter("userName", username)
+			.uniqueResult();
+			return user;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			session.close();
+		}
 		return null;
-	}
-
-
+	}	
 }

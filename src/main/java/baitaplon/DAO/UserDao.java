@@ -1,9 +1,7 @@
 package baitaplon.DAO;
 
-import java.util.List;
+import baitaplon.entities.User;
 
-import baitaplon.entities.Users;
-
-public interface UserDao {
-	public Users login(String Email, String password);
+public interface UserDAO {
+	public User findByUserName(String username);
 }
