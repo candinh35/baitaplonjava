@@ -29,7 +29,7 @@
           <div class="col-lg-12">
             <div class="page-title-content">
               <h2 class="title">Cart</h2>
-              <div class="bread-crumbs"><a href="index.html">Home<span class="breadcrumb-sep">></span></a><span class="active">Cart</span></div>
+              <div class="bread-crumbs"><a href="index">Home<span class="breadcrumb-sep">></span></a><span class="active">Cart</span></div>
             </div>
           </div>
         </div>
@@ -42,15 +42,15 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="shipping-info">
-              <div class="loading-bar">
-                <div class="load-percent"></div>
-                <div class="label-free-shipping">
-                  <div class="free-shipping svg-icon-style">
-                    <span class="svg-icon" id="svg-icon-shipping2" data-svg-icon="assets/img/icons/shop1.svg"></span>
-                  </div>
-                  <p>Spend £101.10 to get Free Shipping</p>
-                </div>
-              </div>
+<!--               <div class="loading-bar"> -->
+<!--                 <div class="load-percent"></div> -->
+<!--                 <div class="label-free-shipping"> -->
+<!--                   <div class="free-shipping svg-icon-style"> -->
+<!--                     <span class="svg-icon" id="svg-icon-shipping2" data-svg-icon="assets/img/icons/shop1.svg"></span> -->
+<!--                   </div> -->
+<!--                   <p>Spend £101.10 to get Free Shipping</p> -->
+<!--                 </div> -->
+<!--               </div> -->
             </div>
             <div class="cart-table-wrap">
               <div class="cart-table table-responsive">

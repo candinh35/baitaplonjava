@@ -7,8 +7,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class AppController {
-	@RequestMapping(value = {"/admin","/login" })
-	public String login(@RequestParam(value = "error", required = false) String error, Model model) {
+	@RequestMapping(value = {"/admin"})
+	public String adminLogin(@RequestParam(value = "error", required = false) String error, Model model) {
+		if (error != null) {
+			model.addAttribute("mess", "Login failed!");
+		}
+		model.addAttribute("title", "Login");
+		return "Admin/login";
+	}
+	@RequestMapping(value = {"/login"})
+	public String userLogin(@RequestParam(value = "error", required = false) String error, Model model) {
 		if (error != null) {
 			model.addAttribute("mess", "Login failed!");
 		}

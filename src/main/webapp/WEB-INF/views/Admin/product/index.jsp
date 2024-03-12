@@ -52,7 +52,7 @@
 					<c:forEach items="${list}" var="p">
 						<div class="col">
 							<div class="card">
-								<img src="<c:url value='/resources/${p.image}' />" class="card-img-top" alt="...">
+								<img src="<c:url value='/resources/images/${p.image}' />" class="card-img-top" alt="...">
 
 								<div class="card-body">
 									<a href="detail?proId=${p.proId}"><h6 class="card-title cursor-pointer">${p.proName }</h6></a>
@@ -64,6 +64,7 @@
 									</div>
 								</div>
 								<a href="editProduct?proId=${p.proId}" class="btn btn-primary">Edit</a>
+								<a href="delete?proId=${p.proId}" onclick="return confirm('Sure?')" class="btn btn-danger">delete</a>
 							</div>
 						</div>
 					</c:forEach>

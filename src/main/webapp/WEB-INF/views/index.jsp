@@ -421,7 +421,7 @@
 									</a>
 									<div class="product-action">
 										<a class="action-cart ht-tooltip"
-											data-tippy-content="Add to cart" href="shop-cart.html"
+											data-tippy-content="Add to cart" href="cart"
 											title="Add to cart"> <i
 											class="lastudioicon-shopping-cart-3"></i>
 										</a> <a class="action-quick-view ht-tooltip"
@@ -460,7 +460,7 @@
 									</a>
 									<div class="product-action">
 										<a class="action-cart ht-tooltip"
-											data-tippy-content="Add to cart" href="shop-cart.html"
+											data-tippy-content="Add to cart" href="cart"
 											title="Add to cart"> <i
 											class="lastudioicon-shopping-cart-3"></i>
 										</a> <a class="action-quick-view ht-tooltip"

@@ -58,4 +58,5 @@ public class ProductController {
 	    	model.addAttribute("title", "Chi tiết sản phẩm");
 	        return "productDetail";
 	    }
+	  
 }

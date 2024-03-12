@@ -107,6 +107,21 @@ public class ProductDAOImpl implements ProductDAO {
 		}
 		return false;
 	}
+	@Override
+	public boolean delete(Integer proId) {
+		Session session = sessionFactory.openSession();
+		try {
+			session.beginTransaction();
+			session.delete(getProductById(proId));
+			session.getTransaction().commit();
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		}
+		return false;
+	}
+
 
 	
 }

@@ -56,10 +56,7 @@
 							<div class="row">
 								<div class="col-lg-8">
 									<div class="border border-3 p-4 rounded">
-										<form:form
-											action="updateProduct"
-											modelAttribute="product" method="POST"
-											enctype="multipart/form-data">
+										 <form:form action="updateProduct" method="POST" modelAttribute="product" enctype="multipart/form-data">
 											<div class="mb-3">
 												<label for="inputProductTitle" class="form-label">Product
 													Title</label>
@@ -73,10 +70,10 @@
 											</div>
 
 											<div class="mb-3">
-												<label for="inputProductDescription" class="form-label">Product
+												<label class="form-label">Product
 													Images</label> <input type="file" name="fileImage"
-													class="form-control" /> <img alt=""
-													src="${pageContext.request.contextPath}/<c:url value="resources"/>/${product.image}">
+													class="form-control" /> <img
+													src="${pageContext.request.contextPath}/<c:url value="resources"/>/images/${product.image}">
 											</div>
 
 											<div class="mb-3">

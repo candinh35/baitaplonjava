@@ -51,7 +51,7 @@
 				<div class="card">
 					<div class="row g-0">
 						<div class="col-md-4 border-end">
-							<img src="<c:url value='/resources/${product.image}'/>" class="img-fluid"
+							<img src="<c:url value='/resources/images/${product.image}'/>" class="img-fluid"
 								alt="...">
 						</div>
 						<div class="col-md-8">

@@ -148,12 +148,12 @@
 													<div class="product-item">
 														<div class="product-thumb">
 															<a href="product-detail?proId=${pro.proId}"> <img
-																src="<c:url value='/resources/${pro.image}' />" /> <span
+																src="<c:url value='/resources/images/${pro.image}' />" /> <span
 																class="thumb-overlay"></span>
 															</a>
 															<div class="product-action action-style3">
 																<a class="action-cart ht-tooltip"
-																	data-tippy-content="Add to cart" href="shop-cart.html"
+																	data-tippy-content="Add to cart" href="cart"
 																	title="Add to cart"> <i
 																	class="lastudioicon-shopping-cart-3"></i>
 																</a>

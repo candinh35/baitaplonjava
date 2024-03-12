@@ -13,10 +13,13 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import baitaplon.DAO.CategoryDAO;
 import baitaplon.DAO.ProductDAO;
@@ -52,7 +55,7 @@ public class AdminController {
 		return "Admin/product/index";
 	}
 
-	@RequestMapping(value = "/addProduct")
+	@RequestMapping("/addProduct")
 	public String add(Model model) {
 		Product product = new Product();
 		List<Category> listCategory = categoryDAO.getCate();
@@ -62,7 +65,7 @@ public class AdminController {
 		return "Admin/product/add";
 	}
 
-	@RequestMapping(value = "/insertProduct")
+	@RequestMapping("/insertProduct")
 	public String save(@ModelAttribute("product") Product product, BindingResult result,
 			@RequestParam("test") MultipartFile fileImage, HttpServletRequest request) {
 
@@ -88,7 +91,7 @@ public class AdminController {
 
 	}
 
-	@RequestMapping(value = "/detail")
+	@RequestMapping("/detail")
 	public String productDetail(@RequestParam("proId") Integer proId, Model model) {
 		Product product = productDAO.getProductById(proId);
 		model.addAttribute("product", product);
@@ -105,34 +108,46 @@ public class AdminController {
 		model.addAttribute("title", "Edit Product");
 		return "Admin/product/edit";
 	}
-
+	
 	@RequestMapping(value = "/updateProduct")
-	public String update(@ModelAttribute("product") Product product, BindingResult result,
-			@RequestParam("fileImage") MultipartFile fileImage, HttpServletRequest request) {
-		String fileName = fileImage.getOriginalFilename();
-		boolean isEmpty = fileName == null || fileName.trim().length() == 0;
-		if (!isEmpty) {
-			String path = request.getServletContext().getRealPath("resources/images");
-			File f = new File(path);
-
-			File distination = new File(f.getAbsolutePath() + "/" + fileName);
-			if (!distination.exists()) {
-				try {
-					Files.write(distination.toPath(), fileImage.getBytes(), StandardOpenOption.CREATE);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+	public String update(@ModelAttribute("product")Product product,BindingResult result,@RequestParam("fileImage")MultipartFile fileImage,HttpServletRequest request) {
+		// xu ly upload file 
+				String fileName = fileImage.getOriginalFilename();
+				boolean isEmpty = fileName == null || fileName.trim().length() == 0;
+				if(!isEmpty) {
+					String path = request.getServletContext().getRealPath("resources/images");
+					File f = new File(path);
+					
+					File distination = new File(f.getAbsolutePath()+"/"+fileName);
+					if(!distination.exists()) {
+						try {
+							Files.write(distination.toPath(), fileImage.getBytes(), StandardOpenOption.CREATE);
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+					product.setImage(fileName);
 				}
-			}
-			product.setImage(fileName);
-		}
-
-		if (productDAO.update(product)) {
-			return "redirect:/product";
-		} else {
-			return "redirect:/updateProduct";
-		}
+				
+				if(productDAO.update(product)) {
+					return "redirect:/product";
+				} else {
+					return "redirect:/updateProduct";
+				}
 	}
-
+	
+	@RequestMapping("/delete")
+	public String deleteStudent(@RequestParam("proId")Integer proId, Model model) {
+		boolean bl = productDAO.delete(proId);
+		if(bl) {
+			model.addAttribute("success", "Delete successfully!");
+		}else {
+			model.addAttribute("error", "Delete failed!");
+		}
+		List<Product> p = productDAO.getProducts();
+		model.addAttribute("list", p);
+		return "Admin/product/index";
+	}
 	
 }

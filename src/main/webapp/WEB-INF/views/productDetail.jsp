@@ -47,9 +47,9 @@
 											
 												<div class="thumb-item">
 													<a class="lightbox-image" data-fancybox="gallery"
-														href="<c:url value='/resources/${product.image}'/>">
+														href="<c:url value='/resources/images/${product.image}'/>">
 														<img
-														src="<c:url value='/resources/${product.image}'/>"
+														src="<c:url value='/resources/images/${product.image}'/>"
 														alt="Image-HasTech">
 													</a>
 												</div>
@@ -169,7 +169,7 @@
 											<div class="product-desc-row">
 												<div class="product-thumb">
 													<img
-														src="<c:url value="/resources/${product.image}"/>"
+														src="<c:url value="/resources/images/${product.image}"/>"
 														alt="Moren-Shop">
 												</div>
 												<div class="product-content">
