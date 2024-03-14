@@ -57,6 +57,7 @@
 								<div class="col-lg-8">
 									<div class="border border-3 p-4 rounded">
 										 <form:form action="updateProduct" method="POST" modelAttribute="product" enctype="multipart/form-data">
+											<form:input type="hidden" path="proId" class="form-control" id="inputProductId" />
 											<div class="mb-3">
 												<label for="inputProductTitle" class="form-label">Product
 													Title</label>
